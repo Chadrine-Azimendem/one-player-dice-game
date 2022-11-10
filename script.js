@@ -10,3 +10,32 @@ nameSubmit.addEventListener("click", () => {
   inputContent.style.display = "none";
   nameSubmit.style.display = "none";
 });
+
+const diceImg = document.getElementById("diceImg");
+const rollBtn = document.getElementById("rollBtn");
+
+const randomNumber = () => {
+  return Math.round(Math.random() * 5) + 1;
+};
+
+let diceImages = [
+  "./resouces/oneFaceDice.png",
+  "./resouces/twoFaceDice.png",
+  "./resouces/threeFaceDice.png",
+  "./resouces/fourFaceDice.png",
+  "./resouces/fiveFaceDice.png",
+  "./resouces/sixFaceDice.png",
+];
+
+let score = 0;
+let rolls = 0;
+
+rollBtn.addEventListener("click", () => {
+  diceImg.style.display = "block";
+  let randNum = randomNumber();
+  diceImg.src = diceImages[randNum - 1];
+  rolls++;
+  document.getElementById("rollsCount").textContent = rolls;
+  score += randNum;
+  document.getElementById("scoreCount").textContent = score;
+});
