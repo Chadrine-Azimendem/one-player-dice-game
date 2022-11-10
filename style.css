@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 38rem;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #dac4ff;
+}
+
+#rollBtn {
+  width: 8rem;
+  height: 3rem;
+  background-color: #e63946;
+  border: 2px solid #815bc1;
+  border-radius: 0.8rem;
+  color: #ccc;
+  font-size: 1.25rem;
+}
+
+.score-rools-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  border: 2px solid #815bc1;
+}
+p {
+  border: 2px solid #815bc1;
+  height: 4rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+input {
+  height: 2rem;
+  width: 20%;
+}
