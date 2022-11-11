@@ -1,3 +1,20 @@
+p {
+  border: 2px solid #815bc1;
+  height: 4rem;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+input {
+  height: 2rem;
+  width: 20%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -12,11 +29,16 @@
 #rollBtn {
   width: 8rem;
   height: 3rem;
-  background-color: #e63946;
+  background-color: #83df12;
   border: 2px solid #815bc1;
   border-radius: 0.8rem;
-  color: #ccc;
+  color: rgb(27, 25, 25);
   font-size: 1.25rem;
+}
+#rollBtn:disabled,
+#rollBtn[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
 .score-rools-wrapper {
@@ -27,18 +49,6 @@
   align-content: center;
   align-items: center;
   border: 2px solid #815bc1;
-}
-p {
-  border: 2px solid #815bc1;
-  height: 4rem;
-  display: flex;
-  align-content: center;
-  align-items: center;
-}
-
-input {
-  height: 2rem;
-  width: 20%;
 }
 
 #diceImg {
