@@ -12,12 +12,31 @@
 <body>
 
     <div class="wrapper">
+
+        <!-- sounds links -->
+        <audio id="win">
+            <source src="./resouces/soundsAndvideos/winner.mp3">
+        </audio>
+        <audio id="lost">
+            <source src="./resouces/soundsAndvideos/failure-drum-sound.mp3">
+        </audio>
+        <audio id="good">
+            <source src="./resouces/soundsAndvideos/facemorethan3.mp3">
+        </audio>
+        <audio id="bad">
+            <source src="./resouces/soundsAndvideos/facelesthan3.mp3">
+        </audio>
+        <!-- welcome label and name input form -->
         <label for="playerInpt">Hello!!! Enter Your Name below to Start the dice Game.</label>
         <div class="player-inpt">
             <input id="playerInpt" type="text" placeholder="Your Name">
             <button id="nameSubmit">Start</button>
         </div>
+
+        <!-- div for the players name -->
         <div id="playersName"></div>
+
+        <!-- score and rolls count -->
         <div class="score-rools-wrapper">
             <div id="score">
                 <p>Score:</p>
@@ -28,12 +47,26 @@
                 <p id="rollsCount"></p>
             </div>
         </div>
+
+        <!-- dice and roll button -->
         <img id="diceImg" src="" alt="dice">
         <button type="submit" id="rollBtn">Roll</button>
+
     </div>
 
 
     <script src="./script.js"></script>
 </body>
+<footer>
+
+    <p id="footer-p1">
+        Sound Effect from
+        <a
+            href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7184">Pixabay</a>
+    </p>
+    <p id="footer-p2">
+        &copy Chadrine Azimendem 2022
+    </p>
+</footer>
 
 </html>

@@ -90,3 +90,19 @@ input {
   width: 9rem;
   height: 9rem;
 }
+
+footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 4rem;
+  padding: 5rem 5rem 1rem 5rem;
+}
+
+#footer-p1,
+#footer-p2 {
+  border: none;
+  background-color: white;
+  color: black;
+  display: block;
+  margin: auto;
+  padding: unset;
+}

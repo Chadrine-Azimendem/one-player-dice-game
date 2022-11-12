@@ -44,18 +44,26 @@ rollBtn.addEventListener("click", () => {
 
   let randNum = randomNumber();
   diceImg.src = diceImages[randNum - 1];
+
   // update the roll count
   rolls++;
   document.getElementById("rollsCount").textContent = rolls;
+
   // update the score count.
   score += randNum;
   document.getElementById("scoreCount").textContent = score;
+
   // check if player wins or loses
   if (score > 20) {
     playersName.innerText =
       "Congratulations, you win!!! Enter your name to restart.";
     score = 0;
     rolls = 0;
+
+    // play winner sound
+    const win = document.getElementById("win");
+    win.play();
+
     document.getElementById("scoreCount").textContent = score;
     document.getElementById("rollsCount").textContent = rolls;
     inputContent.style.display = "block";
@@ -65,6 +73,10 @@ rollBtn.addEventListener("click", () => {
     playersName.innerText = "Sorry, you lost!!! Enter your name to restart.";
     score = 0;
     rolls = 0;
+
+    const lost = document.getElementById("lost");
+    lost.play();
+
     document.getElementById("scoreCount").textContent = score;
     document.getElementById("rollsCount").textContent = rolls;
     inputContent.style.display = "block";
